@@ -20,14 +20,15 @@ $ npm install ssmirr/compatible
 ## Using _Compatible_
 
 You can fetch compatibility status of a package and all the versions:
+
 ``` js
-await compatible.update('<package name>', '<package manager>', '<from version>', '<to version>'));
+await compatible.dependency('<package name>', '<package manager>', '<calculate success rate = false>'));
 ```
 
 , specific version of a package:
 
 ``` js
-await compatible.dependency('<package name>', '<package manager>'));
+await compatible.update('<package name>', '<package manager>', '<from version>', '<to version>'));
 ```
 
 , or updating from version a to version b of a package:
