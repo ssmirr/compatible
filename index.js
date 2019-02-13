@@ -32,7 +32,7 @@ class Compatible {
     }
 
     static getSuccessRate(candidate_updates, successful_updates) {
-        return (successful_updates / candidate_updates).toFixed(2);
+        return +(successful_updates / candidate_updates).toFixed(2);
     }
 
     static async getUpdateData(pkgName, pkgManager) {
