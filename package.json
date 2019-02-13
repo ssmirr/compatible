@@ -1,6 +1,6 @@
 {
   "name": "compatible",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check how compatible two versions of a dependency are",
   "main": "index.js",
   "scripts": {
