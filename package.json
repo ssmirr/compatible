@@ -1,0 +1,26 @@
+{
+  "name": "compatible",
+  "version": "0.0.1",
+  "description": "Check how compatible two versions of a dependency are",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssmirr/compatible.git"
+  },
+  "keywords": [
+    "dependancy",
+    "dependancy",
+    "management",
+    "npm",
+    "pip",
+    "yarn",
+    "nuget",
+    "docker",
+    "maven"
+  ],
+  "author": "Samim Mirhosseini (https://github.com/ssmirr/)",
+  "license": "Apache-2.0"
+}
