@@ -20,14 +20,15 @@ class Compatible {
     static async version(pkgName, pkgManager, ToVersion) {
         let updateData = await this.getUpdateData(pkgName, pkgManager);
         let result = updateData.semver_updates.filter(update => update.updated_version === ToVersion)[0];
-        result.success_rate = this.getSuccessRate(result.candidate_updates, result.successful_updates);
+        // console.log('thisisresults: ', pkgName, pkgManager, ToVersion)
+        if(result) result.success_rate = this.getSuccessRate(result.candidate_updates, result.successful_updates);
         return result;
     }
 
     static async update(pkgName, pkgManager, FromVersion, ToVersion) {
         let updateData = await this.dependency(pkgName, pkgManager);
         let result = updateData.filter(update => update.previous_version === FromVersion && update.updated_version === ToVersion)[0];
-        result.success_rate = this.getSuccessRate(result.candidate_updates, result.successful_updates);
+        if(result) result.success_rate = this.getSuccessRate(result.candidate_updates, result.successful_updates);
         return result;
     }
 
